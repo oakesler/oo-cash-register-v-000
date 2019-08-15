@@ -40,7 +40,7 @@ class CashRegister
   end
   
   def items
-    self.add_item
-    
+    @@
+  end
 end
 
