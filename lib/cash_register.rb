@@ -11,7 +11,7 @@ class CashRegister
   def initialize(discount = nil)
     @total = total
     @discount = discount
-    
+    @@titles_array.clear
     @total = 0
     
     #@@count += 1
