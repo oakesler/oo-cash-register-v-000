@@ -15,7 +15,7 @@ class CashRegister
     #@@count += 1
   end
   
-  def add_item(title, price, quanitity = 1) 
+  def add_item(title, price, quantity = 1) 
     x = 0 
     @total = total
     if x < quantity
@@ -23,7 +23,7 @@ class CashRegister
       x += 1
       else
         @@last_total << @total
-        self.total += price * quanitity
+        self.total += price * quantity
       end
     end
  
