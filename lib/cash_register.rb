@@ -23,7 +23,7 @@ class CashRegister
       @@titles_array << title
       x += 1 
     end
-    @@last_total << price * quantity
+    @@last_total += price * quantity
     self.total += price * quantity
   end
 end
