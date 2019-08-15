@@ -5,8 +5,7 @@ class CashRegister
   
   #@@count = 0 
   @@last_total = 0 
-  
-  
+  @@titles_array = []
   
   
   def initialize(discount = nil)
