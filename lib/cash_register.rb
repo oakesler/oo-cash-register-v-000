@@ -44,5 +44,5 @@ class CashRegister
     @@titles_array
   end
 end
-end
+
 
