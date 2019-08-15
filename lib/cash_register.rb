@@ -40,7 +40,7 @@ class CashRegister
   end
   
   def items
-    @@
+    @@titles_array
   end
 end
 
