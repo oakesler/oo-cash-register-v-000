@@ -20,11 +20,14 @@ class CashRegister
   
   
   def add_item(title, price, quanitity = 1) 
+    x = 0 
     @total = total
+    while x < quantity
     @@titles_array << title
+    x += 1
+  end
     @@last_total << @total
     self.total += price * quanitity
-    
   end
   
   def apply_discount(discount = @discount)
