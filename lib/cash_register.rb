@@ -1,5 +1,4 @@
 require "pry"
-
 class CashRegister
   attr_accessor :total, :discount
   
@@ -12,19 +11,17 @@ class CashRegister
     @total = total
     @discount = discount
     @total = 0
-    
     @@titles_array = []
-    
     #@@count += 1
   end
-  
   
   def add_item(title, price, quanitity = 1) 
     x = 0 
     @total = total
-    while x < quantity
-    @@titles_array << title
-    x += 1
+    if x < quantity
+      @@titles_array << title
+      x += 1
+    else
 
     @@last_total << @total
     self.total += price * quanitity
@@ -34,7 +31,6 @@ class CashRegister
     @total = total
     if @discount == nil 
       "There is no discount to apply."
-      #binding.pry
     else 
       float_discount = discount / 100.0
       discounted_total = @total - (float_discount * @total)
