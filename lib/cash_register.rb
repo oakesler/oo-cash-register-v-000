@@ -5,7 +5,7 @@ class CashRegister
   
   #@@count = 0 
   @@last_total = 0 
-  @@total = 0 
+  
   
   
   
@@ -38,5 +38,9 @@ class CashRegister
       "After the discount, the total comes to $#{discounted_total.to_int}."
     end
   end
+  
+  def items
+    self.add_item
+    
 end
 
