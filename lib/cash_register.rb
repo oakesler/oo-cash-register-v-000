@@ -16,13 +16,14 @@ class CashRegister
   end
   
   def add_item(title, price, quantity = 1) 
-    @@last_total << @total
+    #@@last_total << @total
     x = 0
     if quantity >= 1 
       while x < quantity
       @@titles_array << title
       x += 1 
     end
+    @@last_total << price * quantity
     self.total += price * quantity
   end
 end
