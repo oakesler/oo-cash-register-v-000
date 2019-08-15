@@ -25,7 +25,7 @@ class CashRegister
     while x < quantity
     @@titles_array << title
     x += 1
-  end
+
     @@last_total << @total
     self.total += price * quanitity
   end
