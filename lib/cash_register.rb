@@ -13,6 +13,8 @@ class CashRegister
     @discount = discount
     @total = 0
     
+    @@titles_array = []
+    
     #@@count += 1
   end
   
