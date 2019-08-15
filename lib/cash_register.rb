@@ -46,7 +46,8 @@ end
   
   def void_last_transaction
     #binding.pry
-    @total - @@last_total
+    void = @total - @@last_total
+    void
   end
 end
 
