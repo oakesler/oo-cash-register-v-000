@@ -21,10 +21,11 @@ class CashRegister
     if x < quantity
       @@titles_array << title
       x += 1
-    else
-
-    @@last_total << @total
-    self.total += price * quanitity
+      else
+        @@last_total << @total
+        self.total += price * quanitity
+      end
+    end
   end
   
   def apply_discount(discount = @discount)
