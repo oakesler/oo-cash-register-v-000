@@ -44,7 +44,7 @@ end
   end
   
   def void_last_transaction
-    @total - @@last_total
+    voided_total = @total - @@last_total
   end
 end
 
